@@ -8,7 +8,7 @@ This project is a Mars rover dashboard that consumes the NASA API. The dashboard
 
 ### Repository
 
-https://github.com/ialkamal/ij-p2-mars-rover
+https://github.com/ialkamal/ij-p2-mars-dashboard
 
 ### Deployment
 
@@ -16,11 +16,9 @@ Project is deployed on heroku at the following <a href="https://mars-rover-ialka
 
 ### Getting Started
 
-We have supplied some of the foundational code for you. So follow these steps to get started:
+1. Please clone as follows:
 
-1. Please clone the project branch as follows:
-
-`git clone --branch project https://github.com/ialkamal/ij-p2-mars-rover.git`
+`git clone https://github.com/ialkamal/ij-p2-mars-dashboard.git`
 
 2. Install dependencies:
 
