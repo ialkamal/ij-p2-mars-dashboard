@@ -1,0 +1,136 @@
+/* -------------------  MOBILE  --------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  min-height: 100vh;
+}
+
+header {
+  /* header styles */
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  min-width: 425px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  object-fit: contain;
+}
+
+footer {
+  /* footer styles */
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: flex;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabcontent > div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rover-info {
+  width: 100%;
+  margin: 5px;
+  line-height: 1.5rem;
+}
+
+.rover-info > ul {
+  text-align: left;
+  list-style: none;
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+  /* use mobile */
+  .tabcontent > div {
+    width: 90%;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  /* use mobile */
+
+  .tabcontent > div {
+    width: 80%;
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  /* use mobile */
+  .tabcontent {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .tabcontent > div {
+    width: 500px;
+  }
+
+  .tabcontent > div:nth-of-type(2) {
+    flex-grow: 1;
+  }
+
+  img {
+    width: 500px;
+    height: 500px;
+  }
+}
